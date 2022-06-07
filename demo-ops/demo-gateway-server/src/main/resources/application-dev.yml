@@ -1,0 +1,45 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:5003
+      enabled: false
+    gateway:
+      globalcors:
+        #跨域配置  部署手段可以解决跨域问题,具体看实际情况
+        corsConfigurations:
+          '[/**]':
+            allowedOriginPatterns: "*"
+            allowed-methods: "*"
+            allowed-headers: "*"
+            allow-credentials: true
+            exposedHeaders: "Content-Disposition,Content-Type,Cache-Control"
+      routes:
+        # 认证中心
+        - id: dcsyun-auth-server
+          uri: lb://dcsyun-auth-server
+          predicates:
+            - Path=/auth/**
+          filters:
+            - StripPrefix=1
+        # 用户
+        - id: dcsyun-sys-server
+          uri: lb://dcsyun-sys-server
+          predicates:
+            - Path=/sys/**
+          filters:
+            - StripPrefix=1  # 解决服务转发的时候去掉去掉路由前缀 localhost：8088/test/v2/api 转发的就是 localhost:8089/v2/api
+# 配置白名单路径
+white-list:
+  urls:
+    - "/v2/api-docs/**"
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8848/eureka/

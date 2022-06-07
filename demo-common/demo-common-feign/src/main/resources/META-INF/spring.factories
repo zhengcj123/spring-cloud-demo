@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.demo.cloud.common.feign.config.OkHttpConfig,\
+  com.demo.cloud.common.feign.aspect.InnerAuthAspect
