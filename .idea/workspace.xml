@@ -18,6 +18,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -29,6 +32,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2ACJixeUAWUpfr8KKHYhtnxE39h" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,7 +48,7 @@
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "D:/work_space_learn/spring-cloud-demo/demo-ops/demo-gateway-server/src/main/resources",
-    "spring.configuration.checksum": "ac15c7950344b25e939593040469e368"
+    "spring.configuration.checksum": "9f3005cc09eafb7b36477d6da5bcd968"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -105,6 +109,7 @@
       <workItem from="1654507769831" duration="1823000" />
       <workItem from="1654521087071" duration="1075000" />
       <workItem from="1654575718534" duration="3116000" />
+      <workItem from="1654595574204" duration="373000" />
     </task>
     <servers />
   </component>
