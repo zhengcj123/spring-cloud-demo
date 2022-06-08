@@ -3,20 +3,20 @@ server:
 
 spring:
   cloud:
-    sentinel:
-      transport:
-        dashboard: localhost:5003
-      enabled: false
+#    sentinel:
+#      transport:
+#        dashboard: localhost:5003
+#      enabled: false
     gateway:
-      globalcors:
-        #跨域配置  部署手段可以解决跨域问题,具体看实际情况
-        corsConfigurations:
-          '[/**]':
-            allowedOriginPatterns: "*"
-            allowed-methods: "*"
-            allowed-headers: "*"
-            allow-credentials: true
-            exposedHeaders: "Content-Disposition,Content-Type,Cache-Control"
+#      globalcors:
+#        #跨域配置  部署手段可以解决跨域问题,具体看实际情况
+#        corsConfigurations:
+#          '[/**]':
+#            allowedOriginPatterns: "*"
+#            allowed-methods: "*"
+#            allowed-headers: "*"
+#            allow-credentials: true
+#            exposedHeaders: "Content-Disposition,Content-Type,Cache-Control"
       routes:
         # 认证中心
         - id: dcsyun-auth-server

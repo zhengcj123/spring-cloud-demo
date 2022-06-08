@@ -9,11 +9,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demo-common-swagger" />
         <module name="demo-gateway-server" />
-        <module name="demo-service" />
+        <module name="demo-user-api" />
+        <module name="demo-user-service" />
         <module name="demo-common-core" />
         <module name="demo-common-feign" />
-        <module name="demo-common-mybatis" />
         <module name="demo-common-redis" />
+        <module name="demo-common-mybatis" />
         <module name="demo-eureka-server" />
       </profile>
     </annotationProcessing>
@@ -30,6 +31,9 @@
       <module name="demo-gateway-server" options="-parameters" />
       <module name="demo-ops" options="-parameters" />
       <module name="demo-service" options="-parameters" />
+      <module name="demo-user" options="-parameters" />
+      <module name="demo-user-api" options="-parameters" />
+      <module name="demo-user-service" options="-parameters" />
       <module name="spring-cloud-demo" options="-parameters" />
     </option>
   </component>

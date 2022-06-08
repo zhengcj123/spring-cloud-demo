@@ -3,37 +3,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>demo-common</artifactId>
+        <artifactId>demo-user</artifactId>
         <groupId>com.zhengcj.cloud</groupId>
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>demo-common-mybatis</artifactId>
+    <artifactId>demo-user-api</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
     <dependencies>
+
         <dependency>
             <groupId>com.zhengcj.cloud</groupId>
-            <artifactId>demo-common-core</artifactId>
+            <artifactId>demo-common-feign</artifactId>
             <version>${cloud-demo.version}</version>
         </dependency>
 
-        <!--数据库-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-        <!--mybatis-->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>${mybatis-plus.version}</version>
-        </dependency>
     </dependencies>
-
 </project>
