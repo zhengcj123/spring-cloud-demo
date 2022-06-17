@@ -31,18 +31,19 @@ import java.util.List;
 public class SwaggerConfiguration {
     @Bean
     public Docket createRestApi() {
-        List<Parameter> params = new ArrayList<>();
-        Parameter header = new ParameterBuilder().name(AuthConstants.AUTHORIZATION_KEY).description("用户凭证")
-                .modelRef(new ModelRef("string")).parameterType("header")
-                .required(false).build();
-        params.add(header);
+//        List<Parameter> params = new ArrayList<>();
+//        Parameter header = new ParameterBuilder().name(AuthConstants.AUTHORIZATION_KEY).description("用户凭证")
+//                .modelRef(new ModelRef("string")).parameterType("header")
+//                .required(false).build();
+//        params.add(header);
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
                 .paths(PathSelectors.any())
                 .build()
-                .globalOperationParameters(params);
+//                .globalOperationParameters(params)
+                ;
 
     }
 

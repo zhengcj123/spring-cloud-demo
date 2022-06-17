@@ -2,7 +2,7 @@ package com.demo.cloud.ops.gateway.util;
 
 import com.alibaba.fastjson.JSONObject;
 import com.demo.cloud.common.core.constant.CommonCode;
-import com.demo.cloud.common.core.util.R;
+import com.demo.cloud.common.core.util.ApiResponse;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -21,7 +21,7 @@ public class WebUtils {
         response.setStatusCode(HttpStatus.UNAUTHORIZED);
         response.getHeaders().add(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE);
         CommonCode commonCode = CommonCode.getValue(code);
-        R<?> failed = R.failed(commonCode);
+        ApiResponse<?> failed = ApiResponse.failed(commonCode);
         DataBuffer buffer = response.bufferFactory().wrap(JSONObject.toJSONString(failed).getBytes());
         return response.writeWith(Flux.just(buffer));
     }

@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.demo.cloud.common.core.lang.Action;
 import com.demo.cloud.common.core.lang.Func;
 import com.demo.cloud.common.core.util.CommonUtils;
-import com.demo.cloud.common.core.util.R;
+import com.demo.cloud.common.core.util.ApiResponse;
 
 
 public class PageAssembler {
@@ -54,21 +54,21 @@ public class PageAssembler {
         return pagedDTO.convert(convertFunc);
     }
 
-    public static <T, TS> R<PagedDTO<T>> result(IPage<TS> page, Class<T> clazz) {
+    public static <T, TS> ApiResponse<PagedDTO<T>> result(IPage<TS> page, Class<T> clazz) {
         return result(page, clazz, null);
     }
 
-    public static <T, TS> R<PagedDTO<T>> result(IPage<TS> page, Class<T> clazz, CopyOptions copyOptions) {
+    public static <T, TS> ApiResponse<PagedDTO<T>> result(IPage<TS> page, Class<T> clazz, CopyOptions copyOptions) {
         PagedDTO<T> pagedDTO = convert(page, clazz, copyOptions);
-        return R.ok(pagedDTO);
+        return ApiResponse.success(pagedDTO);
     }
 
 
-    public static <T, TS> R<PagedDTO<T>> result(PagedDTO<TS> pagedDTO, Class<T> clazz) {
+    public static <T, TS> ApiResponse<PagedDTO<T>> result(PagedDTO<TS> pagedDTO, Class<T> clazz) {
         return result(pagedDTO, clazz, null);
     }
 
-    public static <T, TS> R<PagedDTO<T>> result(PagedDTO<TS> pagedDTO, Class<T> clazz, CopyOptions copyOptions) {
-        return R.ok(pagedDTO.convert(clazz, copyOptions));
+    public static <T, TS> ApiResponse<PagedDTO<T>> result(PagedDTO<TS> pagedDTO, Class<T> clazz, CopyOptions copyOptions) {
+        return ApiResponse.success(pagedDTO.convert(clazz, copyOptions));
     }
 }

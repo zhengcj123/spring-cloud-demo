@@ -15,6 +15,7 @@
         <module>demo-common/demo-common-core</module>
         <module>demo-common/demo-common-feign</module>
         <module>demo-common/demo-common-mybatis</module>
+        <module>demo-service/demo-swagger</module>
     </modules>
 
     <parent>
@@ -36,6 +37,7 @@
         <swagger.knife4j.version>2.0.4</swagger.knife4j.version>
         <cglib.version>3.3.0</cglib.version>
         <easypoi.version>4.4.0</easypoi.version>
+        <knife.version>2.0.9</knife.version>
     </properties>
 
     <dependencies>

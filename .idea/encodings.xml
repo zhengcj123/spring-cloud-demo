@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/demo-common/demo-common-core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-common/demo-common-feign/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-common/demo-common-feign/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-common/demo-common-knife/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-common/demo-common-mybatis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-common/demo-common-mybatis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-common/demo-common-redis/src/main/java" charset="UTF-8" />
@@ -15,6 +16,7 @@
     <file url="file://$PROJECT_DIR$/demo-ops/demo-gateway-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-ops/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-ops/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-service/demo-swagger/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-service/demo-user/demo-user-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-service/demo-user/src/main/java" charset="UTF-8" />

@@ -17,21 +17,11 @@
     </properties>
 
     <dependencies>
-        <!-- web环境 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <!-- swagger -->
         <dependency>
             <groupId>com.zhengcj.cloud</groupId>
-            <artifactId>demo-common-swagger</artifactId>
+            <artifactId>demo-common-knife</artifactId>
             <version>1.0.0</version>
-        </dependency>
-        <!--eureka 客户端 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
         <dependency>
@@ -57,6 +47,12 @@
             <groupId>com.zhengcj.cloud</groupId>
             <artifactId>demo-common-redis</artifactId>
             <version>${cloud-demo.version}</version>
+        </dependency>
+
+        <!--eureka 客户端 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
     <build>
