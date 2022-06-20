@@ -38,9 +38,9 @@ public class UserController {
     private UserService userService;
 
 
-    @ApiOperation("用户登录的基本信息")
+    @ApiOperation("登录")
     @PostMapping("login")
-    public ApiResponse<String> findUserLoginInfoById(@NotBlank String userName,@NotBlank String password){
+    public ApiResponse<String> userLogin(@NotBlank String userName,@NotBlank String password){
         String token = userService.loginUser(userName, password);
         return success(token);
     }

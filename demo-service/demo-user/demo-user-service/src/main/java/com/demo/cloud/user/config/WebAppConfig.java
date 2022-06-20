@@ -9,11 +9,14 @@ package com.demo.cloud.user.config;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import springfox.documentation.spring.web.SpringfoxWebMvcConfiguration;
 
 /**
  * @describe：
@@ -23,8 +26,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  */
 @Configuration
 public class WebAppConfig implements WebMvcConfigurer {
-    @Autowired
-    private TokenInterceptor tokenInterceptor;
+    @Bean
+    public TokenInterceptor tokenInterceptor() {
+        return new TokenInterceptor();
+    }
     /**
      * 跨域支持
      * @param registry
@@ -38,11 +43,14 @@ public class WebAppConfig implements WebMvcConfigurer {
 //                .maxAge(3600 * 24);
 //    }
 
+    // 配置拦截器
     @Override
     public void addInterceptors(InterceptorRegistry registry){
 //        registry.addInterceptor(crosInterceptor).addPathPatterns("/**");   // 跨域拦截器
-        registry.addInterceptor(tokenInterceptor).addPathPatterns("/**")
-                .excludePathPatterns("/doc.html", "/webjars/*");  // token 验证拦截器
+        registry.addInterceptor(tokenInterceptor())// token 验证拦截器
+                .addPathPatterns("/**")
+                .excludePathPatterns("/user/login","/doc.html","/swagger-resources","/webjars/**")
+        ;
     }
 
     /**
@@ -53,9 +61,10 @@ public class WebAppConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //过滤swagger
-        registry.addResourceHandler("swagger-ui.html", "doc.html")
+        // 指的是对外暴露的访问路径
+        registry.addResourceHandler("doc.html")
+                // 指的是内部文件放置的目录
                 .addResourceLocations("classpath:/META-INF/resources/");
-
         registry.addResourceHandler("/webjars/**")
                 .addResourceLocations("classpath:/META-INF/resources/webjars/");
     }

@@ -29,21 +29,12 @@ import java.io.PrintWriter;
  * 2022/6/16 16:19
  */
 
-@Component
+
 public class TokenInterceptor implements HandlerInterceptor {
 
     @Autowired
     private UserService userService;
 
-    /**
-     * 忽略拦截的url
-     */
-    private String urls[] = {
-            "/user/login",
-            "/user/register",
-            "/swagger-resources",
-            "/webjars"
-    };
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String url = request.getRequestURI();
@@ -51,18 +42,9 @@ public class TokenInterceptor implements HandlerInterceptor {
 
         String method = request.getMethod();
         if (!method.equals("OPTIONS")){
-            // 遍历需要忽略拦截的路径
-            for (String item : this.urls){
-                if(url.startsWith("/webjars")) {
-                    return true;
-                }
-                if (item.equals(url)){
-                    return true;
-                }
-            }
             // 查询验证token
             if (!userService.verifyToken(token)){
-                throw new BusinessException("token : 权限不足");
+                throw new BusinessException("token :"+url+" 权限不足");
             }
         }
         return true;

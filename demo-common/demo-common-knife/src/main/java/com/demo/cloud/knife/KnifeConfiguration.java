@@ -96,7 +96,7 @@ public class KnifeConfiguration {
                 .groupName(groupName)
                 .select()
 //                .apis(RequestHandlerSelectors.basePackage(basePackage))
-                .apis(RequestHandlerSelectors.withMethodAnnotation(RequestMapping.class))
+                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
                 .paths(PathSelectors.any())
                 .build()
                 .extensions(openApiExtensionResolver.buildExtensions(groupName))

@@ -4,52 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc5e498b-023f-490d-a4fc-e77fbf4ab060" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-common/demo-common-core/src/main/java/com/demo/cloud/common/core/constant/CommonConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-common/demo-common-knife/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-common/demo-common-knife/src/main/java/com/demo/cloud/knife/KnifeConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-common/demo-common-knife/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-common/demo-common-mybatis/src/main/java/com/demo/cloud/common/mybatis/utils/PageVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-eureka-server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-swagger/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-swagger/src/main/java/com/demo/cloud/swagger/SpringBootDemoSwaggerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-swagger/src/main/java/com/demo/cloud/swagger/common/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-swagger/src/main/java/com/demo/cloud/swagger/common/DataType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-swagger/src/main/java/com/demo/cloud/swagger/common/ParamType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-swagger/src/main/java/com/demo/cloud/swagger/common/ResponseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-swagger/src/main/java/com/demo/cloud/swagger/config/Knife4jConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-swagger/src/main/java/com/demo/cloud/swagger/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-swagger/src/main/java/com/demo/cloud/swagger/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-swagger/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/UserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/config/GlobalExceptionResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/config/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/config/TokenInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/config/WebAppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/entity/ao/UserCreateAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/entity/ao/UserUpdateAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/entity/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/entity/po/UserPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/entity/vo/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="bc5e498b-023f-490d-a4fc-e77fbf4ab060" name="Changes" comment="to（WebAppConfig） 集成knife(没有使用安全框架)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-common/demo-common-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/demo-common-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-common/demo-common-core/src/main/java/com/demo/cloud/common/core/util/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/demo-common-core/src/main/java/com/demo/cloud/common/core/util/ApiResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-common/demo-common-mybatis/src/main/java/com/demo/cloud/common/mybatis/utils/PageAssembler.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/demo-common-mybatis/src/main/java/com/demo/cloud/common/mybatis/utils/PageAssembler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-common/demo-common-swagger/src/main/java/com/demo/cloud/common/swagger/SwaggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/demo-common-swagger/src/main/java/com/demo/cloud/common/swagger/SwaggerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-ops/demo-eureka-server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-ops/demo-eureka-server/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-ops/demo-eureka-server/target/classes/com/demo/cloud/ops/eureka/DcsYunEurekaApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-ops/demo-gateway-server/src/main/java/com/demo/cloud/ops/gateway/util/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-ops/demo-gateway-server/src/main/java/com/demo/cloud/ops/gateway/util/WebUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/config/TokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/config/TokenInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/config/WebAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/demo-user/demo-user-service/src/main/java/com/demo/cloud/user/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +183,9 @@
       <workItem from="1655126958905" duration="1359000" />
       <workItem from="1655340652082" duration="12483000" />
       <workItem from="1655382728947" duration="5153000" />
-      <workItem from="1655438598387" duration="3050000" />
+      <workItem from="1655438598387" duration="5141000" />
+      <workItem from="1655472367973" duration="3370000" />
+      <workItem from="1655714167465" duration="2353000" />
     </task>
     <task id="LOCAL-00001" summary="to(pom.xml) 修改依赖父配置">
       <created>1654671060690</created>
@@ -233,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654671060690</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="to（demo-user-service） 集成mybatis-pluxs和knife模">
+      <created>1655444356187</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655444356187</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +209,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="to(pom.xml) 修改依赖父配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="to(pom.xml) 修改依赖父配置" />
+    <MESSAGE value="to（demo-user-service） 集成mybatis-pluxs和knife模" />
+    <MESSAGE value="to（WebAppConfig） 集成knife(没有使用安全框架)" />
+    <option name="LAST_COMMIT_MESSAGE" value="to（WebAppConfig） 集成knife(没有使用安全框架)" />
   </component>
 </project>
